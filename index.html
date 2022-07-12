@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dicee</title>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="index.js" defer></script>
+  <!-- <a href="https://www.flaticon.com/free-icons/dice" title="dice icons">Dice icons created by rizal2109 - Flaticon</a> -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#e1e1e1',
+            secondary: '#e995a3',
+          }
+        }
+      }
+    }
+
+  </script>
+
+</head>
+
+<body class="bg-gradient-to-r from-primary to-secondary text-center">
+  <div class="text-8xl text-center w-screen py-6">
+    <h1 class="font-serif m-6">Press the button</h1>
+
+    <div class="inline-block">
+      <p class="text-4xl m-16">Player 1</p>
+      <img class="w-4/5" src="images/dice6.png">
+    </div>
+
+    <div class="inline-block">
+      <p class="text-4xl m-16">Player 2</p>
+      <img class="w-4/5" src="images/dice6.png">
+    </div>
+
+  </div>
+  <div class="m-16">
+    <button id="playButton" onclick="play()" type="button" button type="button"
+      class="text-white bg-gradient-to-br from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-lg px-12 py-2.5 text-center mr-2 mb-2">Play</button>
+  </div>
+
+  <footer class="">
+    <p class=""><a class="font-semibold text-2xl text-neutral-800 hover:text-red-600"
+        href=https://github.com/ruimartins3?tab=overview&from=2022-05-01&to=2022-05-31 target="_blank">© Rui Martins
+        2022 🎲</a></p>
+  </footer>
+</body>
+
+</html>
